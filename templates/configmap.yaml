@@ -4,4 +4,4 @@ metadata:
   name: {{ .Release.Name }}-config
 data:
   example.txt: |-
-    {{ .Files.Get "files/example.txt" | indent 2 }}
+    {{ .Files.Get "files/bigfile.txt" | indent 2 }}
