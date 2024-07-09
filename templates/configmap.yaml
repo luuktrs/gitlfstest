@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  example.txt: |-
+    {{ .Files.Get "files/example.txt" | indent 2 }}
