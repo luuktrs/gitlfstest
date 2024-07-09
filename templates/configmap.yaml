@@ -1,10 +1,3 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: {{ .Release.Name }}-config
-data:
-  {{- $files := .Files }}
-  {{- range tuple "files/bigfile.txt"}}
-  {{ . }}: |-
-        {{ $files.Get . }}
-  {{- end }}
+version https://git-lfs.github.com/spec/v1
+oid sha256:578d17627aaec7b6651e50a8cae8d0c6abcc358a5e116e62ed871aa14313dda9
+size 423
